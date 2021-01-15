@@ -1,3 +1,42 @@
 div.main-body {
     display: grid;
+    grid-template-columns: minmax(200px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
+}
+
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+}
+
+nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(228, 213, 145);
+}
+
+main#main-doc {
+    grid-area: mainContent;
+    background-color: rgb(248, 241, 209);
+    padding: 20px;
+}
+
+header {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media screen and (max-width:750px) {
+    div.main-body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "navbar" "mainContent";
+    }
+    nav#navbar {
+        position: inherit;
+    }
 }
