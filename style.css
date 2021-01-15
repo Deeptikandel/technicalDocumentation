@@ -17,18 +17,24 @@ nav#navbar a {
     margin: 10px 0;
     text-decoration: none;
     color: black;
-    background-color: rgb(228, 213, 145);
+    background-color: rgb(255, 243, 188);
 }
 
 main#main-doc {
     grid-area: mainContent;
-    background-color: rgb(248, 241, 209);
+    background-color: rgb(253, 251, 243);
     padding: 20px;
 }
 
 header {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+code {
+    display: block;
+    background-color: rgb(219, 216, 216);
+    padding: 20px;
 }
 
 @media screen and (max-width:750px) {
